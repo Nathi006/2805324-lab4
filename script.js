@@ -40,7 +40,7 @@ async function searchCountry(countryName){
 
         } catch (error) {
             // Show error message
-            document.getElementById("error-message").innerHTML=`${error}`;
+            document.getElementById("error-message").innerHTML=`<p>${error}</p>`;
         } finally {
             // Hide loading spinner
             document.getElementById('loading-spinner').style.display = "none";
