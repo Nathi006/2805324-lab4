@@ -40,6 +40,8 @@ async function searchCountry(countryName){
 
         } catch (error) {
             // Show error message
+                document.getElementById('country-info').innerHTML = "";
+            document.getElementById("bordering-countries").innerHTML = "";
             document.getElementById("error-message").innerHTML=`<p>${error}</p>`;
         } finally {
             // Hide loading spinner
