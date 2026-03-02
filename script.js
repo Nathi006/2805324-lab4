@@ -7,8 +7,6 @@ async function searchCountry(countryName){
         document.getElementById("loading-spinner").style.display="block";
         // Fetch country data
 
-        document.getElementById("country-info").style.display="block"
-        document.getElementById("bordering-countries").style.display="block"
         const response = await fetch(`https://restcountries.com/v3.1/name/${countryName.toLowerCase()}?fullText=true`);
         if (!response.ok){
             throw new Error("Could not fetch the data");
@@ -42,7 +40,6 @@ async function searchCountry(countryName){
 
         } catch (error) {
             // Show error message
-            console.error(error);
             document.getElementById("error-message").innerHTML=`${error}`;
         } finally {
             // Hide loading spinner
@@ -54,4 +51,5 @@ async function searchCountry(countryName){
 document.getElementById('search-btn').addEventListener('click', () => {
     const country = document.getElementById('country-input').value;
     searchCountry(country);
+
 });

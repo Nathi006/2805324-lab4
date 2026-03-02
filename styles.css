@@ -14,21 +14,21 @@
     100% { transform: rotate(360deg); }
 }
 .country-card{
-    background-color: gray;
+
     padding: 10px;
     height: 50%;
     margin: 5px;
-    display: none;
+    
 }
 .border-grid{
-    background-color: dodgerblue;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 15px;
     height: 30%;
-    display: none;
+
 }
 .error{
     color: red;
