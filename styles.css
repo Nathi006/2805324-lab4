@@ -1,0 +1,36 @@
+.spinner{
+
+    width: 40px;
+    height: 40px;
+    border: 5px solid #ccc;
+    border-top: 5px solid #333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    display: none;
+
+}
+@keyframes spin{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.country-card{
+    background-color: gray;
+    padding: 10px;
+    height: 50%;
+    margin: 5px;
+}
+.border-grid{
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    height: 30%;
+}
+.error{
+    color: red;
+}
+.hidden{
+    display: none;
+}
