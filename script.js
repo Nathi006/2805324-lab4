@@ -34,9 +34,9 @@ async function searchCountry(countryName){
                 <p>${b.name.common}</p>
                 <img src="${b.flags.svg}" alt="${b.name.common} flag" height="400" width="400">`).join(" ");
         }
-        else{
-            document.getElementById("error-message").innerHTML="Could not find the data for bordering countries";
-        }       
+        // else{
+        //     document.getElementById("error-message").innerHTML="Could not find the data for bordering countries";
+        // }       
 
         } catch (error) {
             // Show error message
